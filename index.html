@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Abandoned Trolley Rails in Denver</title>
+
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.0.1/leaflet-omnivore.min.js'></script>
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+  #header {
+    position:absolute;
+    top:0;
+    left:0;
+    margin-left:20%;
+    padding:20px;
+    z-index:9999;
+    background:#fff;
+    opacity:0.75;
+    color:#000;
+  }
+  #footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    z-index:999;
+    background:#fff;
+    opacity:0.75;
+    padding:20px;
+  }
+</style>
+</head>
+<body>
+<div id="header" class="text-center">
+<h1>Abandoned Trolley Tracks in Denver</h1>
+</div>
+
+<div id='map'></div>
+<script>
+var map = L.mapbox.map('map', 'drewrwilson.i807421d')
+    .setView([39.7421053, -104.9892129], 13);
+omnivore.kml('data/abandoned_trolly_tracks.kml').addTo(map);
+</script>
+<div id="footer" class="text-center">
+      <h1>Made from open data from <a href="http://data.denvergov.org/">Denver's open data portal.</a></h1>
+      </div>
+
+</body>
+</html>
