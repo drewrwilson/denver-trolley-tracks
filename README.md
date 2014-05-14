@@ -7,4 +7,4 @@ Screenshot of the map:
 ![Screenshot of the map!](https://raw.githubusercontent.com/drewrwilson/denver-trolley-tracks/master/denver-abandoned-trolleys.jpg "Zoom! Enhance!")
 
 Zoom! Enhance!
-![Zoom Enhance!](https://raw.githubusercontent.com/drewrwilson/denver-trolley-tracks/master/denver-abandoned-trolleys. "Zoom! Enhance!")
+![Zoom Enhance!](https://raw.githubusercontent.com/drewrwilson/denver-trolley-tracks/master/denver-abandoned-trolleys.gif "Zoom! Enhance!")
